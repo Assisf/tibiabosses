@@ -7,6 +7,8 @@ OUTPUT_BOSSES = './output/output_bosses.txt'
 
 # SELECIONANDO O MUNDO
 # world = input("Select your world")
+# guardar o resultado da response em um arquivo json por dia & rodar um script todo dia
+# fazer um novo arquivo que ler todos os arquivos json e calcula tudo do jeito que ta aqui embaixo V
 api_url = f'/v3/killstatistics/Issobra'
 response = requests.get(API_SERVER + api_url).json()
 
@@ -19,7 +21,6 @@ bossesfile = open(INPUT_BOSSES, "r")
 bosses = json.loads(bossesfile.read())
  
 for boss in bosses:
-    del boss['qualquer']
     if boss['name'] in races:
         if(races[boss['name']]['last_day_killed'] > 0):
             print('Achou ontem: ' + boss['name'])
@@ -33,5 +34,3 @@ for boss in bosses:
 bossesfile = open(INPUT_BOSSES, 'w')
 bossesfile.write(json.dumps(bosses, indent=4, sort_keys=True))
 bossesfile.close()
-
-#ESCREVER NO ARQUIVO DE SAIDA
