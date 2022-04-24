@@ -1,0 +1,37 @@
+[
+    {
+        "days_until_killed": [],
+        "last_day_killed": 9,
+        "name": "Zushuka"
+    },
+    {
+        "days_until_killed": [],
+        "last_day_killed": 9,
+        "name": "Tyrn"
+    },
+    {
+        "days_until_killed": [],
+        "last_day_killed": 9,
+        "name": "Yeti"
+    },
+    {
+        "days_until_killed": [],
+        "last_day_killed": 9,
+        "name": "undead cavebears"
+    },
+    {
+        "days_until_killed": [],
+        "last_day_killed": 9,
+        "name": "The Welter"
+    },
+    {
+        "days_until_killed": [],
+        "last_day_killed": 9,
+        "name": "Ocyakao"
+    },
+    {
+        "days_until_killed": [],
+        "last_day_killed": 9,
+        "name": "Man in the cave"
+    }
+]
